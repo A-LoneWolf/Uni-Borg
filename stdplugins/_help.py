@@ -67,4 +67,4 @@ async def _(event):
         else:
             plugin_syntax = f"No DOCSTRING has been setup for {plugin_name} plugin."
     else:
-        plugin_syntax = "Enter valid **Plugin** name.
+        plugin_syntax = "Enter valid **Plugin** name."
