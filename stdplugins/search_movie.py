@@ -27,7 +27,7 @@ async def _(event):
     response_api = requests.get(sample_url).text
     if response_api:
 
-        await event.edit("Here is the result from moviesflix for {}:\n👉 [{}]({})\nReport Broken Link or Request movie [Here](https://t.me/moviesflixnet)\n`Thank me later 😉` @A_L0neWolf ".format(input_str,response_api.rstrip()))
+        await event.edit("Here is the result from moviesflix for {}:\n👉 [{}]({})\nReport Broken Link or Request movie [Here](https://t.me/moviesflixnet)\n`Thank me later 😉` @A_L0neWolf ".format(input_str,input_str,response_api.rstrip()))
 
     else:
 
@@ -45,7 +45,7 @@ async def _(event):
     response_api = requests.get(sample_url).text
     if response_api:
 
-        await event.edit("Here is the result from flixhubhd for {}:\n👉 [{}]({})\nReport Broken Link or Request movie [Here](https://t.me/flixhubmovie)\n`Thank me later 😉` @A_L0neWolf ".format(input_str,response_api.rstrip()))
+        await event.edit("Here is the result from flixhubhd for {}:\n👉 [{}]({})\nReport Broken Link or Request movie [Here](https://t.me/flixhubmovie)\n`Thank me later 😉` @A_L0neWolf ".format(input_str,input_str,response_api.rstrip()))
 
     else:
 
