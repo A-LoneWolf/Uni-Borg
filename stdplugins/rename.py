@@ -2,8 +2,11 @@
 Syntax:
 .rename file.name
 .rnupload file.name
-.rnstreamupload file.name
-By @Ck_ATR"""
+.rnstreamupload file.name (upload media as stream)
+
+"""
+##By Ck_ATR
+
 import aiohttp
 import asyncio
 from datetime import datetime
