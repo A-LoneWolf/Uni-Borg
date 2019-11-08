@@ -1,7 +1,7 @@
 """Quick Response Codes
 Available Commands
-.getqr
-.makeqr <long text to include>"""
+.getqr (reply to a qr)
+.makeqr <long text to include> or reply to a message"""
 from telethon import events
 import asyncio
 from datetime import datetime
