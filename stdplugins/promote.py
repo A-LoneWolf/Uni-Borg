@@ -1,4 +1,7 @@
-"""Reply to a user to .promote them in the current chat"""
+"""Reply to a user to `.promote` them in the current chat
+Try `.prankpromote` to fake promote 
+
+"""
 from telethon import events
 import asyncio
 from datetime import datetime
