@@ -1,7 +1,7 @@
 """Shouts a message in MEME way
 usage: .shout message
-originaly from : @corsicanu_bot
 """
+##originaly from corsicanu_bot
 
 import sys
 from telethon import events, functions
