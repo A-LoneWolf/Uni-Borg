@@ -48,5 +48,5 @@ class Development(Config):
 ## internals
 
 The core features offered by the custom `TelegramClient` live under the
-[`uniborg/`](https://github.com/SpEcHiDe/uniborg/tree/master/uniborg)
+[`uniborg/`](https://github.com/A-LoneWolf/uniborg/tree/master/uniborg)
 directory, with some utilities, enhancements, the `_core` plugin, and the `_inline_bot` plugin.
