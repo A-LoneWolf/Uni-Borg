@@ -1,6 +1,7 @@
-"""DA.GD helpers in @UniBorg
+"""DA.GD helpers 
 Available Commands:
-.isup URL
+.isup <URL>
+.short <url>
 .dns google.com
 .url <long url>
 .unshort <short url>"""
