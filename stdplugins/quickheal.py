@@ -1,14 +1,9 @@
-"""Emoji
-
+"""
 Available Commands:
-
-.emoji shrug
-
-.emoji apple
-
-.emoji :/
-
-.emoji -_-"""
+`.quickheal`
+`.sqh`
+`.vquickheal`
+"""
 
 from telethon import events
 
