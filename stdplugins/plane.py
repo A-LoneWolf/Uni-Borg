@@ -1,3 +1,8 @@
+"""
+Plane Syntax: `.plane`
+
+"""
+
 #By STARKTM1
 from telethon import events
 import asyncio
