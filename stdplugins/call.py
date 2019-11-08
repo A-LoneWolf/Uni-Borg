@@ -2,13 +2,12 @@
 
 Available Commands:
 
-.emoji shrug
-
-.emoji apple
-
-.emoji :/
-
-.emoji -_-"""
+`./cull`
+`.shrug`
+`.apple`
+`.:/`
+`.-_-`
+"""
 
 from telethon import events
 
@@ -41,13 +40,13 @@ async def _(event):
             "`Connecting To Telegram Headquarters...`",
             "`Call Connected.`",
             "`Telegram: Hello This is Telegram HQ. Who is this?`",
-            "`Me: Yo this is` @r4v4n4 ,`Please Connect me to Pavel Durov Shukla`",
+            "`Me: Its me` ,`Please Connect me to Pavel Durov Shukla`",
             "`User Authorised.`",
             "`Calling Pavel Durov Shukla (@durov) At +916969696969`",
             "`Private  Call Connected...`",
             "`Me: Hello Sir, Please Ban This Telegram Account.`",    
             "`Durov: May I Know Who Is This?`",
-            "`Me: Yo Brah, I Am` @r4v4n4",
+            "`Me: You know wll who I am`",
             "`Durov: OMG!!! I Am FAN Of You Sir...\nI'll Make Sure That Guy Account Will Get Blocked Within 24Hrs.`",
             "`Me: Thanks, See You Later Brah.`",
             "`Durov: Please Don't Thank Sur, Telegram Is Your's. Just Gimme A Call When You Become Free.`",
