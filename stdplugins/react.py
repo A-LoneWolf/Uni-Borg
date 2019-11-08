@@ -1,3 +1,11 @@
+"""Available commands 
+`.react` <happy/thinking/waving/wtf/love/confused/dead/sad/dog/emoticons>
+Example: `.react happy`
+
+"""
+
+
+
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # (c) @INF1N17Y
