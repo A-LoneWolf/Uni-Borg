@@ -1,5 +1,5 @@
 """Get Telegram Profile Picture and other information
-Syntax: .whois @username"""
+Syntax: .whois <@username> or reply ro a message"""
 
 import html
 from telethon.tl.functions.photos import GetUserPhotosRequest
