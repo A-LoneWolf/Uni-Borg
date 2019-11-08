@@ -1,3 +1,7 @@
+"""Plugin to edit a message
+Syntax: `.edit` <new message> (reply to a message)
+"""
+
 # This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
