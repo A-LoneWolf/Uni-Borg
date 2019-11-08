@@ -4,7 +4,13 @@
 # you may not use this file except in compliance with the License.
 #
 
-""" Userbot module for getting the weather of a city. """
+""" Userbot module for getting the weather of a city.
+Set **DEFCITY** in in config vars to set deafult city
+Syntax: `.weather`
+        `.setcity <city name> (set city for weather)
+
+
+ """
 
 import json
 from datetime import datetime
@@ -23,7 +29,7 @@ DEFCITY = ''
 
 async def get_tz(con):
     """ Get time zone of the given country. """
-    """ Credits: @aragon12 and @zakaryan2004. """
+    """ Credits: aragon12 and zakaryan2004. """
     for c_code in c_n:
         if con == c_n[c_code]:
             return tz(c_tz[c_code][0])
