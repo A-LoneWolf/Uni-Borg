@@ -1,6 +1,10 @@
 """Upload local Files to gDrive
 Syntax:
-.ugdrive"""
+`.gdrive` (reply to a mesaage or file path)
+`.drivesch` (search file on drive)
+`.gfolder` (drive folder)
+`.gdrivedir` <directory path> (upload directory to drive)
+"""
 
 # The entire code given below is verbatim copied from
 # https://github.com/cyberboysumanjay/Gdrivedownloader/blob/master/gdrive_upload.py
@@ -38,7 +42,7 @@ parent_id = Config.GDRIVE_FOLDER_ID
 G_DRIVE_DIR_MIME_TYPE = "application/vnd.google-apps.folder"
 
 
-@borg.on(admin_cmd(pattern="gg ?(.*)", allow_sudo=True))
+@borg.on(admin_cmd(pattern="gdrive ?(.*)", allow_sudo=True))
 async def _(event):
     if event.fwd_from:
         return
