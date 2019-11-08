@@ -1,6 +1,6 @@
 """
 
-Let me search That For You Plugin by @A_L0neWolf
+Search module Plugin by @A_L0neWolf
 Syntax:
  .mflix <search query>
  .hflix <search query>
