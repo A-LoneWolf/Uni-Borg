@@ -1,11 +1,12 @@
 # This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
-"""Snips
+"""Snips means global note
 Available Commands:
-.snips
-.snipl
-.snipd"""
+`.snips` <name><reply to a message to save> (snips save)
+`.snipl` (snips list)
+`.snipd` <snip name> (snips delete)
+"""
 from telethon import events, utils
 from telethon.tl import types
 from sql_helpers.snips_sql import get_snips, add_snip, remove_snip, get_all_snips
