@@ -1,12 +1,7 @@
-"""Emoji
-
+"""
 Available Commands:
 
 `./cull`
-`.shrug`
-`.apple`
-`.:/`
-`.-_-`
 """
 
 from telethon import events
