@@ -1,6 +1,9 @@
 """Upload local Files to gDrive
 Syntax:
-.ugdrive"""
+.ugdrive
+.gdrivesp <gdrive folder url> (usage-The next uploads will upload to this folder)
+gdriveclear (clears the gdrivesp path)
+"""
 
 # The entire code given below is verbatim copied from
 # https://github.com/cyberboysumanjay/Gdrivedownloader/blob/master/gdrive_upload.py
