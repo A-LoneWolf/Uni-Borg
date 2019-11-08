@@ -1,3 +1,6 @@
+"""Syntax: `.type` <texts>
+"""
+
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # (c) Shrimadhav U K
@@ -13,7 +16,7 @@ async def _(event):
     # https://t.me/AnotherGroup/176551
     input_str = event.pattern_match.group(1)
     typing_symbol = "|"
-    DELAY_BETWEEN_EDITS = 0.3
+    DELAY_BETWEEN_EDITS = 0.2
     previous_text = ""
     await event.edit(typing_symbol)
     await asyncio.sleep(DELAY_BETWEEN_EDITS)
