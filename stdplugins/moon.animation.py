@@ -1,5 +1,5 @@
 """ syntax: `.moon animation`
-
+"""
 # (c) UniBorg
 
 from telethon import events
