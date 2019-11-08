@@ -1,8 +1,9 @@
 """
 
 Memes Plugin for Userbot
-
-usage = .meme someCharacter //default delay will be 3
+Syntax:
+`.meme` someCharacter //default delay will be 3
+`.🖕`
 
 """
 ##By : - @Zero_cool7870
