@@ -1,6 +1,7 @@
 """Upload local Files to Mirrors
 Syntax:
-.verystream"""
+.verystream <file path> or reply to a media
+"""
 
 import aiohttp
 import aiofiles
