@@ -1,5 +1,9 @@
-# (c) @UniBorg
-# Original written by @UniBorg edit by @I_m_Rock
+""" command: `.earth`
+"""
+
+
+# (c) UniBorg
+# Original written by UniBorg edit by @I_m_Rock
 
 from telethon import events
 import asyncio
