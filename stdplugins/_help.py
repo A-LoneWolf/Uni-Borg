@@ -1,3 +1,9 @@
+"""available commands
+   `.helpme`
+   `.dc`
+   `.config`
+"""
+
 import sys
 from telethon import events, functions, __version__
 from uniborg.util import admin_cmd
@@ -53,18 +59,3 @@ async def _(event):
     logger.info(result)  # pylint:disable=E0602
     await event.edit("""Telethon UserBot""")
 
-
-@borg.on(admin_cmd(pattern="gandu (.*)"))
-async def _(event):
-    if event.fwd_from:
-        return
-    plugin_name = event.pattern_match.group(1)
-    if plugin_name in borg._plugins:
-        help_string = borg._plugins[plugin_name].__doc__
-        unload_string = f"Use `.unload {plugin_name}` to remove this plugin.\n"
-        if help_string:
-            plugin_syntax = f"Syntax for plugin **{plugin_name}**:\n\n{help_string}\n{unload_string}"
-        else:
-            plugin_syntax = f"No DOCSTRING has been setup for {plugin_name} plugin."
-    else:
-        plugin_syntax = "Enter valid **Plugin** name."
