@@ -1,9 +1,14 @@
+""" Ping me 
+Syntax: `.ping`
+"""
+
+
 from telethon import events
 from datetime import datetime
 from uniborg.util import admin_cmd
 
 
-@borg.on(admin_cmd("pingme"))
+@borg.on(admin_cmd("ping"))
 async def _(event):
     if event.fwd_from:
         return
