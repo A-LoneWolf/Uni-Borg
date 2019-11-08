@@ -1,4 +1,5 @@
-""".admin Plugin for @UniBorg"""
+"""Abuse Plugin 
+Syntax: `.gaali` """
 import asyncio
 from telethon import events
 from telethon.tl.types import ChannelParticipantsAdmins
