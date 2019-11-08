@@ -1,5 +1,17 @@
-#This Lit Module By:- @Zero_cool7870 Sar
-#Special thanks to @spechide who modified this aria
+"""Available commands:
+`.magnet` <magnet>
+`.tor` <torrent file path>
+`.url` <url>
+`.remove`
+`.pause`
+`.resume`
+`.show`
+
+"""
+
+
+#This Lit Module By:- Zero_cool7870 Sar
+#Special thanks to spechide who modified this aria
 
 import aria2p
 import asyncio
