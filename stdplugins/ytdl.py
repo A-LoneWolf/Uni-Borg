@@ -1,7 +1,9 @@
 # Thanks to @AvinashReddy3108 for this plugin
 
 """
-Audio and video downloader using Youtube-dl
+Download videos and songs from 
+YouTube and [many other sites](https://ytdl-org.github.io/youtube-dl/supportedsites.html)
+
 .yta To Download in mp3 format
 .ytv To Download in mp4 format
 """
