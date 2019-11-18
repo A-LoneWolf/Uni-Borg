@@ -25,7 +25,7 @@ async def _(event):
         return
 
     input_str = event.pattern_match.group(1)
-    sample_url = "https://da.gd/s?url=https://moviezflix.in/?s={}&t=h_&ia=about".format(input_str.replace(" ","+"))
+    sample_url = "https://da.gd/s?url=https://moviezflix.net/?s={}&t=h_&ia=about".format(input_str.replace(" ","+"))
     response_api = requests.get(sample_url).text
     if response_api:
 
