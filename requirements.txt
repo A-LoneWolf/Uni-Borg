@@ -1,4 +1,10 @@
-telethon>=1.10.3
+telethon
 lxml
+selenium
 aria2p
+spcli
+instaloader
+coffeehouse==1.0.4
+anime-downloader
+ChatterBot
 -r ./requirements-stdborg.txt
