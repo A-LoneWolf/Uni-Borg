@@ -97,14 +97,6 @@
       "value": "9",
       "required": false
     },
-    "G_DRIVE_CLIENT_ID": {
-      "description": "Get your credentials from https://da.gd/so63O",
-      "required": false
-    },
-    "G_DRIVE_CLIENT_SECRET": {
-      "description": "Get your credentials from https://da.gd/so63O",
-      "required": false
-    }
     "TG_BOT_TOKEN_BF_HER": {
       "description": "Obtain a Telegram bot token by contacting @BotFather",
       "required": false
@@ -161,6 +153,14 @@
     },
     "VERY_STREAM_KEY": {
       "description": "Get your API key from https://verystream.com",
+      "required": false
+    },
+    "G_DRIVE_CLIENT_ID": {
+      "description": "Get your credentials from https://da.gd/so63O",
+      "required": false
+    },
+    "G_DRIVE_CLIENT_SECRET": {
+      "description": "Get your credentials from https://da.gd/so63O",
       "required": false
     }
   },
