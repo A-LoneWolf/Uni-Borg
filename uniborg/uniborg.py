@@ -9,10 +9,10 @@ from pathlib import Path
 from telethon import TelegramClient
 import telethon.utils
 import telethon.events
-
+from pymongo import MongoClient
 from .storage import Storage
 from . import hacks
-
+import os
 
 class Uniborg(TelegramClient):
     def __init__(
