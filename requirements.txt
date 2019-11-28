@@ -3,6 +3,7 @@ lxml
 selenium
 aria2p
 ChatterBot
+chatterbot_corpus
 spcli
 instaloader
 coffeehouse==1.0.4
