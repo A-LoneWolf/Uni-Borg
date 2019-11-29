@@ -1,4 +1,4 @@
-""".admin Plugin for @UniBorg"""
+""".admin Plugin for group Chat to report spam or something to admin"""
 import asyncio
 from telethon import events
 from telethon.tl.types import ChannelParticipantsAdmins
