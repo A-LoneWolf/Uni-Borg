@@ -11,10 +11,10 @@ USAGE:-
 	.learnstart = Add Chat in Learning Chats List.
 	.learnstop = Remove Chat from Learning Chats List.
 	.listDB = Output Currently Stored Auto-Chat/Learning-Chat ID Data.
-Credits:-
-	@Zero_Cool7870 (Me)	
-
 """
+#Credits:-
+#	@Zero_Cool7870 (Me)	
+
 from chatterbot import ChatBot 
 from chatterbot.conversation import Statement
 from telethon import events
