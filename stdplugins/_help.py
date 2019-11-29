@@ -1,53 +1,32 @@
-import sys
-from telethon import events, functions, __version__
+- Only two of the environment variables are mandatory.
+- This is because of `telethon.errors.rpc_error_list.ApiIdPublishedFloodError`
+    - `APP_ID`:   You can get this value from https://my.telegram.org
+    - `API_HASH`:   You can get this value from https://my.telegram.org
+- The userbot will work without setting the non-mandatory environment variables.
+
+
+## design
+
+The modular design of the project enhances your Telegram experience
+through [plugins](https://github.com/A-LoneWolf/uniborg/tree/master/stdplugins)
+which you can enable or disable on demand.
+
+Each plugin gets the `borg`, `logger`, `Config`, `tgbot` and `storage` magical
+variables
+to ease their use. Thus creating a plugin as easy as adding
+a new file under the plugin directory to do the job:
+
+```python
+# stdplugins/myplugin.py
+from telethon import events
 from uniborg.util import admin_cmd
 
-@borg.on(admin_cmd(pattern="helpme ?(.*)", allow_sudo=True))  # pylint:disable=E0602
-async def _(event):
-    if event.fwd_from:
-        return
-    splugin_name = event.pattern_match.group(1)
-    if splugin_name in borg._plugins:
-        s_help_string = borg._plugins[splugin_name].__doc__
-    else:
-        s_help_string = ""
-    help_string = """`Hi, I am a Bot in service of Master Jas. I am Running.. 
-Python {}
-Telethon {}`
-""".format(
-        sys.version,
-        __version__
-    )
-    tgbotusername = Config.TG_BOT_USER_NAME_BF_HER  # pylint:disable=E0602
-    if tgbotusername is not None:
-        results = await borg.inline_query(  # pylint:disable=E0602
-            tgbotusername,
-            help_string + "\n\n" + s_help_string
-        )
-        await results[0].click(
-            event.chat_id,
-            reply_to=event.reply_to_msg_id,
-            hide_via=True
-        )
-        await event.delete()
-    else:
-        await event.reply(help_string + "\n\n" + s_help_string)
-        await event.delete()
+@borg.on(admin_cmd("hi"))
+async def handler(event):
+    await event.reply("hey")
+```
 
 
-@borg.on(admin_cmd(pattern="dc"))  # pylint:disable=E0602
-async def _(event):
-    if event.fwd_from:
-        return
-    result = await borg(functions.help.GetNearestDcRequest())  # pylint:disable=E0602
-    await event.edit(result.stringify())
+## learning
 
-
-@borg.on(admin_cmd(pattern="config"))  # pylint:disable=E0602
-async def _(event):
-    if event.fwd_from:
-        return
-    result = await borg(functions.help.GetConfigRequest())  # pylint:disable=E0602
-    result = result.stringify()
-    logger.info(result)  # pylint:disable=E0602
-    await event.edit("""Telethon UserBot powered by @UniBorg""")
+Check out the already-mentioned [plugins](https://github.com/A-LoneWolf/UniBorg/tree/master/stdplugins) directory to learn how to write your own, and consider reading [Telethon's documentation](http://telethon.readthedocs.io/).
