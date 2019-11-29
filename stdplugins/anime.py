@@ -1,9 +1,11 @@
 """
 Random Anime Chooser Plugin for Userbot
-usage = .{anime_genre} number of times(integer) 
-By : - @Zero_cool7870
+Command: `.action` <number>, `.harem` <number>, `.mecha` <number>, `.romance` <number>, `.isekai`, <number>, `.adventure` <number>, `.slice` <number>
 
 """
+##By : - @Zero_cool7870
+
+
 from telethon import events
 import asyncio
 import os
