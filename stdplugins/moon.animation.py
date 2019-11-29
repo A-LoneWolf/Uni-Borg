@@ -1,4 +1,6 @@
-# (c) @UniBorg
+""" syntax: `.moon animation`
+"""
+# (c) UniBorg
 
 from telethon import events
 import asyncio
