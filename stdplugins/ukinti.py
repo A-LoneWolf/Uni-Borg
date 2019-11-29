@@ -1,4 +1,4 @@
-""" @ukinti_bot
+""" ukinti bot
 Available Commands:
 .unbanall
 .kick option
