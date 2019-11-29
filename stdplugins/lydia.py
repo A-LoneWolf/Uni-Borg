@@ -8,12 +8,12 @@ Description: A module that Act as a chatbot and chat with a User/other Bot.
 Usage: .cf <as a reply to user's message //Turns AI on For that user.
 	   .delcf <as a reply to user's message //Turns AI off For that user.			
 	   .listcf //Outputs List Of Currently added Users in AI Auto-Chat.
-
-Credits: @Zero_cool7870 (For Writing This Module)
-		 Zi Xing (For CoffeeHouse API)			
-
-
 """
+#Credits: @Zero_cool7870 (For Writing This Module)
+#		 Zi Xing (For CoffeeHouse API)			
+
+
+
 import coffeehouse as cf
 from coffeehouse.exception import CoffeeHouseError
 from uniborg.util import admin_cmd
