@@ -65,7 +65,7 @@ async def _(event):
     response_api = requests.get(sample_url).text
     if response_api:
 
-        await event.edit("Here is the result from animeflix for {}:\n👉 [{}]({})\nReport Broken Link or Request movie [Here](https://t.me/moviesflixnet)".format(input_str,input_str,response_api.rstrip()))
+        await event.edit("Here is the result from animeflix for {}:\n👉 [{}]({})\nReport Broken Link or Request movie [Here](https://t.me/animeflixin)".format(input_str,input_str,response_api.rstrip()))
 
     else:
 
@@ -81,7 +81,7 @@ async def _(event):
         return
 
     input_str = event.pattern_match.group(1)
-    sample_url = "https://da.gd/s?url=https://bollyflix.in/?s={}&t=h_&ia=about".format(input_str.replace(" ","+"))
+    sample_url = "https://da.gd/s?url=https://bollyflixhd.xyz/?s={}&t=h_&ia=about".format(input_str.replace(" ","+"))
     response_api = requests.get(sample_url).text
     if response_api:
 
