@@ -3,7 +3,7 @@
 # Licensed under the Raphielscape Public License, Version 1.b (the "License");
 # you may not use this file except in compliance with the License.
 #
-"""COMMAND : .dir <url>
+"""COMMAND : .direct <url>
 Currently supported urls are Gdrive, zippyshare , Yandex.disk, mega.nz, cloud.mail.ru, MediaFire, SourceForge, OSDN, github, AFH
 """
 
