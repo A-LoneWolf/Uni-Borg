@@ -6,6 +6,6 @@ ChatterBot
 chatterbot_corpus
 spcli
 instaloader
-coffeehouse==1.0.4
+chatterbot_corpus
 anime-downloader
 -r ./requirements-stdborg.txt
