@@ -36,3 +36,4 @@ pyfiglet
 pySmartDL
 telepot
 httplib2
+coffeehouse
