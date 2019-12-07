@@ -37,3 +37,4 @@ pySmartDL
 telepot
 httplib2
 coffeehouse
+dnspython
