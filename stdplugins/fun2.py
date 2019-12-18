@@ -1,12 +1,14 @@
 """Syntax: `.gaand`, `.fu`
           `.human`, `.eye`, `.sux`, `.kess` , `.unoob` , `.menoob`
-`.upro` , `.mepro`
+`.upro` , `.mepro` , `bomb`
 
 
 """
 from telethon import events
 import asyncio
 from uniborg.util import admin_cmd
+import os
+import sys
 
 @borg.on(events.NewMessage(pattern=r"\.(.*)", outgoing=True))
 async def _(event):
@@ -381,3 +383,36 @@ async def _(event):
 
             await event.edit(animation_chars[i % 8])
             await asyncio.sleep(animation_interval)                                
+
+# BY @STARKTM1
+@borg.on(events.NewMessage(pattern=r"\.bomb", outgoing=True))
+async def _(event):
+    if event.fwd_from:
+        return
+       
+ 
+    await event.edit("▪️▪️▪️▪️ \n▪️▪️▪️▪️ \n▪️▪️▪️▪️ \n▪️▪️▪️▪️ \n▪️▪️▪️▪️ \n")
+    await asyncio.sleep(0.5)
+    await event.edit("💣💣💣💣 \n▪️▪️▪️▪️ \n▪️▪️▪️▪️ \n▪️▪️▪️▪️ \n▪️▪️▪️▪️ \n")
+    await asyncio.sleep(0.5)
+    await event.edit("▪️▪️▪️▪️ \n💣💣💣💣 \n▪️▪️▪️▪️ \n▪️▪️▪️▪️ \n▪️▪️▪️▪️ \n")
+    await asyncio.sleep(0.5)
+    await event.edit("▪️▪️▪️▪️ \n▪️▪️▪️▪️ \n💣💣💣💣 \n▪️▪️▪️▪️ \n▪️▪️▪️▪️ \n")
+    await asyncio.sleep(0.5)
+    await event.edit("▪️▪️▪️▪️ \n▪️▪️▪️▪️ \n▪️▪️▪️▪️ \n💣💣💣💣 \n▪️▪️▪️▪️ \n")
+    await asyncio.sleep(0.5)
+    await event.edit("▪️▪️▪️▪️ \n▪️▪️▪️▪️ \n▪️▪️▪️▪️ \n▪️▪️▪️▪️ \n💣💣💣💣 \n")
+    await asyncio.sleep(1)
+    await event.edit("▪️▪️▪️▪️ \n▪️▪️▪️▪️ \n▪️▪️▪️▪️ \n▪️▪️▪️▪️ \n💥💥💥💥 \n")
+    await asyncio.sleep(0.5)
+    await event.edit("▪️▪️▪️▪️ \n▪️▪️▪️▪️ \n▪️▪️▪️▪️ \n💥💥💥💥 \n💥💥💥💥 \n")
+    await asyncio.sleep(0.5)
+    await event.edit("▪️▪️▪️▪️ \n▪️▪️▪️▪️ \n▪️▪️▪️▪️ \n▪️▪️▪️▪️ \n😵😵😵😵 \n")
+    await asyncio.sleep(0.5)
+    await event.edit("RIP PLOX...")
+    await asyncio.sleep(2)
+    await event.delete()
+    
+    
+
+    
