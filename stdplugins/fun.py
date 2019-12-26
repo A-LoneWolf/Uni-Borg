@@ -45,8 +45,8 @@ RUNSREACTS = [
     "`Wicked fast runnah`",
     "`If you wanna catch me, you got to be fast...\nIf you wanna stay with me, you got to be good...\nBut if you wanna pass me...\nYou've got to be kidding.`",
     "`Anyone can run a hundred meters, it's the next forty-two thousand and two hundred that count.`",
-    "`Why are all these people following me?"`,
-    "`Are the kids still chasing me?"`,
+    "`Why are all these people following me?`",
+    "`Are the kids still chasing me?`",
     "`Running a marathon...there's an app for that.`",
 ]
 RAPE_STRINGS = [
