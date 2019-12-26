@@ -1,4 +1,4 @@
-"""COMMAND : `.runs` , `.metoo` , `.rape` , `.insult` , `.pro` , `.maaki` , `.gey`, `.abuse` , `.abusehin`
+"""COMMAND : `.runs` , `.metoo` , `.rape` , `.insult` , `.pro`, `.noob`, `.maaki` , `.gey`, `.chase`, `.hii` `.abuse` , `.abusehin`
 Other emoticons commands
 `.abusewaving`, `.abusewtf`, `.abuselove`, `.abuseconfused`, `.abusedead`, `.abusesad`, `.abusedog`
 `.abuse` <any word>
