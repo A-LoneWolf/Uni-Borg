@@ -28,7 +28,7 @@ if Config.LYDIA_API is not None:
     api_client = cf.API(api_key)
 
 
-@borg.on(admin_cmd(pattern="(e|d|l)ai", allow_sudo=True))
+@borg.on(admin_cmd(pattern="(on|off|list)ai", allow_sudo=True))
 async def lydia_disable_enable(event):
     if event.fwd_from:
         return
@@ -41,15 +41,15 @@ async def lydia_disable_enable(event):
         user_id = reply_msg.from_id
         chat_id = event.chat_id
         await event.edit("Checking!!!...")
-        if input_str == "e":
+        if input_str == "on":
             session = api_client.create_session()
             logger.info(session)
             logger.info(add_s(user_id, chat_id, session.id, session.expires))
             await event.edit(f"AI Chat Has Been Started For You")
-        elif input_str == "d":
+        elif input_str == "off":
             logger.info(remove_s(user_id, chat_id))
             await event.edit(f"AI Chat Turned Off For You.")
-        elif input_str == "l":
+        elif input_str == "list":
             lsts = get_all_s()
             if len(lsts) > 0:
                 output_str = "AI enabled user:\n\n"
