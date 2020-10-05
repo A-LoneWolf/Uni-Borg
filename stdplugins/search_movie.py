@@ -1,12 +1,10 @@
 """
 
-Search module Plugin by @A_L0neWolf
 Syntax:
- .mflix <search query>
- .hflix <search query>
+ .mverse <search query>
  .bflix <search query>
  .aflix <search query>
-
+ .mnation <search query>
 """
 
 
@@ -18,40 +16,40 @@ from uniborg.util import admin_cmd
 
 
 
-@borg.on(admin_cmd(pattern="mflix (.*)"))
+@borg.on(admin_cmd(pattern="mverse (.*)"))
 async def _(event):
 
     if event.fwd_from:
         return
 
     input_str = event.pattern_match.group(1)
-    sample_url = "https://da.gd/s?url=https://moviezflix.net/?s={}&t=h_&ia=about".format(input_str.replace(" ","+"))
+    sample_url = "https://da.gd/s?url=https://moviesverse.com/?s={}&t=h_&ia=about".format(input_str.replace(" ","+"))
     response_api = requests.get(sample_url).text
     if response_api:
 
-        await event.edit("Here is the result from moviesflix for {}:\n👉 [{}]({})\nReport Broken Link or Request movie [Here](https://t.me/moviesflixnet)".format(input_str,input_str,response_api.rstrip()))
+        await event.edit("Here is the result from moviesverse for {}:\n👉 [{}]({})\nReport Broken Link or Request movie [Here](https://t.me/moviesflixnet)".format(input_str,input_str,response_api.rstrip()))
 
     else:
 
-        await event.edit("Something went wrong. Please try again later or report @A_L0neWolf.")
+        await event.edit("Something went wrong. Please try again later")
 
 
-@borg.on(admin_cmd(pattern="hflix (.*)"))
+@borg.on(admin_cmd(pattern="mnation (.*)"))
 async def _(event):
 
     if event.fwd_from:
         return
 
     input_str = event.pattern_match.group(1)
-    sample_url = "https://da.gd/s?url=https://flixhubhd.com/?s={}&t=h_&ia=about".format(input_str.replace(" ","+"))
+    sample_url = "https://da.gd/s?url=https://moviesnation.in/?s={}&t=h_&ia=about".format(input_str.replace(" ","+"))
     response_api = requests.get(sample_url).text
     if response_api:
 
-        await event.edit("Here is the result from flixhubhd for {}:\n👉 [{}]({})\nReport Broken Link or Request movie [Here](https://t.me/flixhubmovie)".format(input_str,input_str,response_api.rstrip()))
+        await event.edit("Here is the result from [MoviesNation](Moviesnation.in) for {}:\n👉 [{}]({})\nReport Broken Link or Request movie [Here](https://t.me/joinchat/OC-vh0_o_IH3KVtxRsigvg)".format(input_str,input_str,response_api.rstrip()))
 
     else:
 
-        await event.edit("Something went wrong. Please try again later or report @A_L0neWolf.")
+        await event.edit("Something went wrong. Please try again later")
 
 
 @borg.on(admin_cmd(pattern="aflix (.*)"))
@@ -69,7 +67,7 @@ async def _(event):
 
     else:
 
-        await event.edit("Something went wrong. Please try again later or report @A_L0neWolf.")
+        await event.edit("Something went wrong. Please try again later")
 
 
 
@@ -89,4 +87,4 @@ async def _(event):
 
     else:
 
-        await event.edit("Something went wrong. Please try again later or report @A_L0neWolf.")
+        await event.edit("Something went wrong. Please try again later")
